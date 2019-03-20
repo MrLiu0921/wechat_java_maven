@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean name = "cloudLockRestful" class="top.zzliup.api.auth.impl.CloudLockRestful" singleton="false">
+		<property name="impl" ref="cloudLockImpl"></property>
+	</bean>
+	<bean name="cloudLockImpl" class="top.zzliup.api.auth.inter.CloudLockImpl">
+	</bean>
+
+	
+</beans>
